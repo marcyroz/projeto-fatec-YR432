@@ -10,11 +10,19 @@ const {ccclass, property} = cc._decorator;
 @ccclass
 export default class scriptWBC extends cc.Component {
 
-    @property(cc.Label)
-    label: cc.Label = null;
+    @property
+    health: number = 100;
 
     @property
-    text: string = 'hello';
+    speed: number = 100;
+
+    @property
+    strength: number = 100;
+
+    @property
+    resistence: number = 100;
+
+    reprodutionRate: number = 0;
 
     // LIFE-CYCLE CALLBACKS:
 

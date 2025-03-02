@@ -10,11 +10,18 @@ const {ccclass, property} = cc._decorator;
 @ccclass
 export default class scriptRBC extends cc.Component {
 
-    @property(cc.Label)
-    label: cc.Label = null;
+    @property
+    health: number = 100;
 
     @property
-    text: string = 'hello';
+    speed: number = 100;
+
+    @property
+    resistence: number = 100;
+    
+    @property
+    infected: boolean = false;
+
 
     // LIFE-CYCLE CALLBACKS:
 
